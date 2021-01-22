@@ -1,6 +1,24 @@
-$primary-color: #17a2b8;
-$dark-color: #343a40;
-$light-color: #f4f4f4;
-$danger-color: #dc3545;
-$success-color: #28a745;
-$max-width: 1100px;
+//backgrounds
+.bg {
+    &-primary {
+        @include set-background($primary-color);
+        border: #ccc 1px solid;
+    }
+    &-light {
+        @include set-background($light-color);
+    }
+    &-dark {
+        @include set-background($dark-color);
+    }
+    &-success {
+        @include set-background($success-color);
+    }
+    &-danger {
+        @include set-background($danger-color);
+    }
+    &-white {
+    @include set-background($white-color);
+    border: #ccc 1px solid;
+    }
+
+}
